@@ -127,7 +127,7 @@
         "mobile.html":         "Mobile Menüs",
         "layout.html":         "Layout & Effekte",
         "footer.html":         "Footer Builder",
-        "wp-integration.html": "WP-Integration",
+        "wp-integration.html": "WP-Menüintegration",
         "import-export.html":  "Import / Export",
         "accessibility.html":  "Barrierefreiheit",
         "multilingual.html":   "Mehrsprachigkeit",
