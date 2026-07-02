@@ -57,6 +57,10 @@
   <a href="#hoe">Hoe het werkt</a>
   <a href="#instellen">Regels instellen</a>
   <a href="#rollen">Zichtbaarheid per rol</a>
+  <a href="#apparaat">Apparaat</a>
+  <a href="#planning">Planning &amp; tijd</a>
+  <a href="#targeting">Pagina- &amp; campagnetargeting</a>
+  <a href="#combineren">Regels combineren</a>
 </div>
 
 <h2 id="hoe">Hoe het werkt</h2>
@@ -88,12 +92,58 @@
   <div class="callout-body"><p>Zichtbaarheidsregels worden server-side toegepast bij het renderen van de menu-HTML. Verborgen items worden niet opgenomen in de paginabroncode en zijn daardoor niet zichtbaar via DOM-inspectie.</p></div>
 </div>
 
+<h2 id="apparaat">Apparaat</h2>
+<p>Kies in de geavanceerde voorwaarden of een item wordt getoond of verborgen op basis van het apparaattype van de bezoeker:</p>
+<ul>
+  <li><strong>Alle apparaten</strong> — standaard.</li>
+  <li><strong>Alleen mobiel</strong> — alleen zichtbaar op telefoons/tablets, verborgen op desktop.</li>
+  <li><strong>Alleen desktop</strong> — alleen zichtbaar op desktop, verborgen op mobiel.</li>
+</ul>
+
+<div class="callout note">
+  <span class="callout-icon">ℹ️</span>
+  <div class="callout-body">
+    <p>Apparaatdetectie gebeurt server-side bij het laden van de pagina met WordPress' <code>wp_is_mobile()</code>-functie. In tegenstelling tot CSS media queries betekent dit dat de juiste HTML naar de browser wordt gestuurd — niet alleen verborgen met CSS — waardoor flitsende content wordt vermeden. Let op: <code>wp_is_mobile()</code> beschouwt tablets als mobiele apparaten.</p>
+  </div>
+</div>
+
+<h2 id="planning">Planning &amp; tijd</h2>
+<p>In de geavanceerde voorwaarden zijn twee onafhankelijke planningsopties beschikbaar.</p>
+
+<h3>Datumbereik</h3>
+<p>Stel een <strong>startdatum/-tijd</strong> en/of <strong>einddatum/-tijd</strong> in. Het item is alleen zichtbaar tussen die momenten (inclusief). Laat een van beide velden leeg voor een open einde — handig om een promotielink automatisch te laten verschijnen en verdwijnen.</p>
+
+<h3>Dagelijks tijdvenster</h3>
+<p>Stel een <strong>van</strong>- en <strong>tot</strong>-tijd in (UU:MM). Het item is elke dag alleen zichtbaar binnen dat tijdvenster. Voorbeeld: toon een link "Live support" alleen tussen 09:00 en 18:00.</p>
+
+<div class="callout warn">
+  <span class="callout-icon">⚠️</span>
+  <div class="callout-body">
+    <p>Planningsregels gebruiken de tijdzone van je WordPress-site (ingesteld onder <em>Instellingen → Algemeen → Tijdzone</em>), niet de lokale tijd van de bezoeker.</p>
+  </div>
+</div>
+
 <div class="callout note">
   <span class="callout-icon">&#128274;</span>
   <div class="callout-body">
-    <p><strong>Privacy.</strong> Alle zichtbaarheidsregels &mdash; rol en inlogstatus &mdash; worden geëvalueerd op je eigen WordPress-server wanneer de pagina wordt opgebouwd. De plugin leest alleen het huidige verzoek (bijvoorbeeld de <code>utm_source</code> in de pagina-URL); het slaat geen bezoekersgegevens op, logt deze niet en stuurt ze niet naar derden.</p>
+    <p><strong>Privacy.</strong> Alle zichtbaarheidsregels &mdash; rol, inlogstatus, apparaat en UTM-bron &mdash; worden geëvalueerd op je eigen WordPress-server wanneer de pagina wordt opgebouwd. De plugin leest alleen het huidige verzoek (bijvoorbeeld de <code>utm_source</code> in de pagina-URL); het slaat geen bezoekersgegevens op, logt deze niet en stuurt ze niet naar derden.</p>
   </div>
 </div>
+
+<h2 id="targeting">Pagina- &amp; campagnetargeting</h2>
+<p>Twee extra voorwaarden vervolledigen de geavanceerde sectie:</p>
+<ul>
+  <li><strong>Pagina's</strong> — beperk het item tot specifieke pagina's door hun pagina-ID's in te voeren (komma-gescheiden).</li>
+  <li><strong>UTM-bron</strong> — toon het item alleen wanneer de bezoeker binnenkomt met een overeenkomende <code>utm_source</code>-queryparameter. Handig om het menu af te stemmen op een specifieke marketingcampagne.</li>
+</ul>
+
+<h2 id="combineren">Regels combineren</h2>
+<p>Alle actieve regels moeten gelijktijdig overeenkomen (EN-logica). Bijvoorbeeld, om een menu-item alleen te tonen aan <em>ingelogde gebruikers op desktop tijdens kantooruren</em>:</p>
+<ul>
+  <li>Zichtbaarheid-dropdown → <strong>Elke ingelogde gebruiker</strong></li>
+  <li>Apparaat → <strong>Alleen desktop</strong></li>
+  <li>Dagelijks tijdvenster → <strong>09:00–18:00</strong></li>
+</ul>
 
 <div class="page-nav">
   <a href="badges.html"><span class="nav-dir">← Vorige</span><span class="nav-title">Badges en stippen</span></a>

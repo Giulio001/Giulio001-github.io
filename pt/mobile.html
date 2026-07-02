@@ -62,7 +62,7 @@
 </ul>
 
 <h2 id="botao-hamburguer">Botão hambúrguer</h2>
-<p>No modo mobile, o menu é ocultado e um botão hambúrguer (☰) é exibido. Ao tocar, o menu abre em um painel deslizante ou em modo acordeão, dependendo da configuração.</p>
+<p>No modo mobile, o menu é ocultado e um botão hambúrguer (☰) é exibido. Ao tocar, o menu abre em um dos 4 estilos configuráveis abaixo.</p>
 <ul>
   <li><strong>Ícone personalizado</strong>: substitua o ícone padrão por um SVG próprio.</li>
   <li><strong>Texto do botão</strong>: adicione um rótulo ao lado do ícone (ex.: "Menu").</li>
@@ -71,13 +71,14 @@
 
 <h2 id="modos-de-abertura">Modos de abertura</h2>
 <ul>
-  <li><strong>Painel deslizante (off-canvas)</strong>: o menu desliza da esquerda ou da direita.</li>
-  <li><strong>Acordeão inline</strong>: o menu expande abaixo do botão hambúrguer, empurrando o conteúdo da página para baixo.</li>
-  <li><strong>Fullscreen overlay</strong>: o menu ocupa toda a tela com fundo semitransparente.</li>
+  <li><strong>Dropdown</strong> (padrão): o menu expande abaixo do botão hambúrguer, empurrando o conteúdo da página para baixo.</li>
+  <li><strong>Tela cheia (Fullscreen)</strong>: o menu ocupa toda a tela com fundo semitransparente.</li>
+  <li><strong>Gaveta esquerda (Drawer)</strong>: um painel desliza a partir da esquerda da tela.</li>
+  <li><strong>Gaveta direita (Drawer)</strong>: um painel desliza a partir da direita da tela.</li>
 </ul>
 
 <h2 id="gestos">Gestos de toque</h2>
-<p>No modo off-canvas, o usuário pode fechar o menu deslizando o dedo para o lado oposto à abertura. O gesto é detectado por um listener de <code>touchstart</code>/<code>touchend</code> nativo, sem dependência de bibliotecas externas.</p>
+<p>Nas gavetas (Drawer), o usuário pode fechar o menu deslizando o dedo para o lado oposto à abertura. O gesto é detectado por um listener de <code>touchstart</code>/<code>touchend</code> nativo, sem dependência de bibliotecas externas.</p>
 
 <h2 id="menu-exclusivo-mobile">Menu exclusivo para mobile</h2>
 <p>Você pode configurar um menu diferente para ser exibido no mobile, independente do menu desktop. Isso é útil para simplificar a navegação em telas menores, ocultando itens secundários.</p>
