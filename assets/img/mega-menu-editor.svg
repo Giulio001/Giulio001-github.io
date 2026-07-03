@@ -1,0 +1,199 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="880" height="590" viewBox="0 0 880 590" font-family="-apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif">
+  <defs>
+    <linearGradient id="hdr" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#4f46e5"/><stop offset="1" stop-color="#7c3aed"/>
+    </linearGradient>
+    <filter id="modal-shadow" x="-5%" y="-5%" width="110%" height="115%">
+      <feDropShadow dx="0" dy="16" stdDeviation="20" flood-color="#1f2937" flood-opacity="0.18"/>
+    </filter>
+  </defs>
+  <rect width="880" height="590" fill="#f9fafb"/>
+
+  <!-- Edit Columns modal (admin/megamenu-panel.php #menux-mega-dialog) -->
+  <g filter="url(#modal-shadow)">
+    <rect x="20" y="16" width="840" height="528" rx="16" fill="#ffffff"/>
+  </g>
+
+  <!-- modal header -->
+  <path d="M20 32 a16 16 0 0 1 16 -16 H844 a16 16 0 0 1 16 16 V70 H20 Z" fill="url(#hdr)"/>
+  <text x="46" y="58" font-size="16" font-weight="700" fill="#ffffff">⚡ Edit Columns</text>
+  <rect x="770" y="42" width="66" height="28" rx="8" fill="#ffffff"/>
+  <text x="803" y="61" font-size="12.5" font-weight="700" fill="#4f46e5" text-anchor="middle">Save</text>
+
+  <!-- toolbar (#menux-mega-content-toolbar) -->
+  <rect x="20" y="70" width="840" height="46" fill="#f8fafc"/>
+  <line x1="20" y1="116" x2="860" y2="116" stroke="#e5e7eb"/>
+  <text x="46" y="98" font-size="11" font-weight="600" fill="#6b7280">Columns:</text>
+  <g font-size="12" font-weight="700" fill="#374151">
+    <rect x="112" y="83" width="26" height="26" rx="6" fill="#ffffff" stroke="#e5e7eb" stroke-width="2"/><text x="125" y="100" text-anchor="middle">1</text>
+    <rect x="144" y="83" width="26" height="26" rx="6" fill="#ffffff" stroke="#e5e7eb" stroke-width="2"/><text x="157" y="100" text-anchor="middle">2</text>
+    <rect x="176" y="83" width="26" height="26" rx="6" fill="#ffffff" stroke="#e5e7eb" stroke-width="2"/><text x="189" y="100" text-anchor="middle">3</text>
+    <rect x="208" y="83" width="26" height="26" rx="6" fill="#4f46e5" stroke="#4f46e5" stroke-width="2"/><text x="221" y="100" text-anchor="middle" fill="#ffffff">4</text>
+  </g>
+  <rect x="252" y="83" width="98" height="26" rx="6" fill="#ede9fe" stroke="#a78bfa" stroke-width="1.3" stroke-dasharray="3 2"/>
+  <text x="301" y="100" font-size="11.5" font-weight="600" fill="#5b21b6" text-anchor="middle">+ Add Column</text>
+  <rect x="364" y="83" width="80" height="26" rx="6" fill="#fef3c7" stroke="#fbbf24"/>
+  <text x="404" y="100" font-size="11.5" font-weight="600" fill="#92400e" text-anchor="middle">✨ Presets</text>
+  <text x="836" y="99" font-size="10.5" fill="#94a3b8" text-anchor="end">Max 4 columns</text>
+
+  <!-- === 4 columns === -->
+  <!-- shared column geometry: x starts at 34, width 198, gap 6 -->
+
+  <!-- Column 1 -->
+  <g>
+    <rect x="34" y="130" width="198" height="398" rx="10" fill="#fafbfc" stroke="#e5e7eb"/>
+    <rect x="34" y="130" width="198" height="34" rx="10" fill="#f1f5f9"/>
+    <rect x="34" y="152" width="198" height="12" fill="#f1f5f9"/>
+    <text x="48" y="152" font-size="11" fill="#94a3b8">⠿</text>
+    <text x="66" y="152" font-size="11.5" font-weight="700" fill="#374151">Column 1</text>
+    <text x="205" y="152" font-size="10.5" fill="#9ca3af">×</text>
+    <text x="48" y="176" font-size="10" fill="#9ca3af">Width: 25%  ·  Align: Left</text>
+
+    <!-- item: heading -->
+    <rect x="46" y="188" width="174" height="30" rx="7" fill="#ffffff" stroke="#e5e7eb"/>
+    <rect x="54" y="196" width="58" height="14" rx="4" fill="#fef3c7"/>
+    <text x="83" y="206" font-size="8.5" font-weight="700" fill="#92400e" text-anchor="middle">heading</text>
+    <text x="120" y="207" font-size="10.5" font-weight="600" fill="#374151">Analytics</text>
+
+    <!-- item: link -->
+    <rect x="46" y="224" width="174" height="30" rx="7" fill="#ffffff" stroke="#e5e7eb"/>
+    <rect x="54" y="232" width="36" height="14" rx="4" fill="#e0e7ff"/>
+    <text x="72" y="242" font-size="8.5" font-weight="700" fill="#3730a3" text-anchor="middle">link</text>
+    <text x="98" y="243" font-size="10.5" fill="#374151">Dashboards</text>
+
+    <!-- item: link -->
+    <rect x="46" y="260" width="174" height="30" rx="7" fill="#ffffff" stroke="#e5e7eb"/>
+    <rect x="54" y="268" width="36" height="14" rx="4" fill="#e0e7ff"/>
+    <text x="72" y="278" font-size="8.5" font-weight="700" fill="#3730a3" text-anchor="middle">link</text>
+    <text x="98" y="279" font-size="10.5" fill="#374151">Reports</text>
+
+    <!-- item: divider -->
+    <rect x="46" y="296" width="174" height="22" rx="7" fill="#ffffff" stroke="#e5e7eb"/>
+    <rect x="54" y="302" width="46" height="12" rx="4" fill="#f3f4f6"/>
+    <text x="77" y="311" font-size="8" font-weight="700" fill="#6b7280" text-anchor="middle">divider</text>
+    <line x1="120" y1="308" x2="204" y2="308" stroke="#d1d5db" stroke-dasharray="2 2"/>
+
+    <!-- +Add item -->
+    <rect x="46" y="330" width="174" height="26" rx="6" fill="#f5f3ff" stroke="#a78bfa" stroke-dasharray="3 2"/>
+    <text x="133" y="347" font-size="10.5" font-weight="600" fill="#4f46e5" text-anchor="middle">+ Add Item</text>
+  </g>
+
+  <!-- Column 2 -->
+  <g>
+    <rect x="238" y="130" width="198" height="398" rx="10" fill="#fafbfc" stroke="#e5e7eb"/>
+    <rect x="238" y="130" width="198" height="34" rx="10" fill="#f1f5f9"/>
+    <rect x="238" y="152" width="198" height="12" fill="#f1f5f9"/>
+    <text x="252" y="152" font-size="11" fill="#94a3b8">⠿</text>
+    <text x="270" y="152" font-size="11.5" font-weight="700" fill="#374151">Column 2</text>
+    <text x="409" y="152" font-size="10.5" fill="#9ca3af">×</text>
+    <text x="252" y="176" font-size="10" fill="#9ca3af">Width: 25%  ·  Align: Left</text>
+
+    <!-- item: image -->
+    <rect x="250" y="188" width="174" height="64" rx="7" fill="#ffffff" stroke="#e5e7eb"/>
+    <rect x="258" y="196" width="42" height="14" rx="4" fill="#d1fae5"/>
+    <text x="279" y="206" font-size="8.5" font-weight="700" fill="#065f46" text-anchor="middle">image</text>
+    <rect x="258" y="215" width="150" height="30" rx="5" fill="url(#hdr)" opacity="0.85"/>
+    <text x="333" y="234" font-size="9.5" font-weight="700" fill="#ffffff" text-anchor="middle">Promo banner.jpg</text>
+
+    <!-- item: shortcode -->
+    <rect x="250" y="262" width="174" height="30" rx="7" fill="#ffffff" stroke="#e5e7eb"/>
+    <rect x="258" y="270" width="66" height="14" rx="4" fill="#fee2e2"/>
+    <text x="291" y="280" font-size="8" font-weight="700" fill="#991b1b" text-anchor="middle">shortcode</text>
+    <text x="333" y="281" font-size="9.5" fill="#374151" font-family="monospace">[contact-form]</text>
+
+    <!-- item: dynamic -->
+    <rect x="250" y="298" width="174" height="30" rx="7" fill="#ffffff" stroke="#e5e7eb"/>
+    <rect x="258" y="306" width="52" height="14" rx="4" fill="#ede9fe"/>
+    <text x="284" y="316" font-size="8" font-weight="700" fill="#5b21b6" text-anchor="middle">dynamic</text>
+    <text x="318" y="317" font-size="10" fill="#374151">✨ 5 recent posts</text>
+
+    <!-- +Add item -->
+    <rect x="250" y="336" width="174" height="26" rx="6" fill="#f5f3ff" stroke="#a78bfa" stroke-dasharray="3 2"/>
+    <text x="337" y="353" font-size="10.5" font-weight="600" fill="#4f46e5" text-anchor="middle">+ Add Item</text>
+  </g>
+
+  <!-- Column 3 -->
+  <g>
+    <rect x="442" y="130" width="198" height="398" rx="10" fill="#fafbfc" stroke="#e5e7eb"/>
+    <rect x="442" y="130" width="198" height="34" rx="10" fill="#f1f5f9"/>
+    <rect x="442" y="152" width="198" height="12" fill="#f1f5f9"/>
+    <text x="456" y="152" font-size="11" fill="#94a3b8">⠿</text>
+    <text x="474" y="152" font-size="11.5" font-weight="700" fill="#374151">Column 3</text>
+    <text x="613" y="152" font-size="10.5" fill="#9ca3af">×</text>
+    <text x="456" y="176" font-size="10" fill="#9ca3af">Width: 25%  ·  Align: Left</text>
+
+    <g font-size="10.5" fill="#374151">
+      <rect x="454" y="188" width="174" height="30" rx="7" fill="#ffffff" stroke="#e5e7eb"/>
+      <rect x="462" y="196" width="58" height="14" rx="4" fill="#fef3c7"/>
+      <text x="491" y="206" font-size="8.5" font-weight="700" fill="#92400e" text-anchor="middle">heading</text>
+      <text x="528" y="207" font-weight="600">Resources</text>
+
+      <rect x="454" y="224" width="174" height="30" rx="7" fill="#ffffff" stroke="#e5e7eb"/>
+      <rect x="462" y="232" width="36" height="14" rx="4" fill="#e0e7ff"/>
+      <text x="480" y="242" font-size="8.5" font-weight="700" fill="#3730a3" text-anchor="middle">link</text>
+      <text x="506" y="243">Documentation</text>
+
+      <rect x="454" y="260" width="174" height="30" rx="7" fill="#ffffff" stroke="#e5e7eb"/>
+      <rect x="462" y="268" width="36" height="14" rx="4" fill="#e0e7ff"/>
+      <text x="480" y="278" font-size="8.5" font-weight="700" fill="#3730a3" text-anchor="middle">link</text>
+      <text x="506" y="279">API Reference</text>
+    </g>
+
+    <!-- +Add item (menu open) -->
+    <rect x="454" y="296" width="174" height="26" rx="6" fill="#4f46e5" opacity="0.08"/>
+    <rect x="454" y="296" width="174" height="26" rx="6" fill="none" stroke="#4f46e5" stroke-dasharray="3 2"/>
+    <text x="541" y="313" font-size="10.5" font-weight="600" fill="#4f46e5" text-anchor="middle">+ Add Item</text>
+
+    <!-- open dropdown of 6 real content types -->
+    <g filter="url(#modal-shadow)">
+      <rect x="454" y="326" width="150" height="150" rx="8" fill="#ffffff" stroke="#e5e7eb"/>
+    </g>
+    <g font-size="10.5" fill="#374151">
+      <text x="466" y="344">Link</text>
+      <text x="466" y="368">Section heading</text>
+      <text x="466" y="392">Divider</text>
+      <text x="466" y="416">Image</text>
+      <text x="466" y="440">Shortcode / Widget</text>
+      <text x="466" y="464" font-weight="700" fill="#5b21b6">✨ Dynamic content</text>
+    </g>
+    <rect x="454" y="350" width="150" height="1" fill="#f3f4f6"/>
+
+    <text x="454" y="502" font-size="9.5" fill="#9ca3af">↑ the 6 content types</text>
+  </g>
+
+  <!-- Column 4 -->
+  <g>
+    <rect x="646" y="130" width="198" height="398" rx="10" fill="#fafbfc" stroke="#e5e7eb"/>
+    <rect x="646" y="130" width="198" height="34" rx="10" fill="#f1f5f9"/>
+    <rect x="646" y="152" width="198" height="12" fill="#f1f5f9"/>
+    <text x="660" y="152" font-size="11" fill="#94a3b8">⠿</text>
+    <text x="678" y="152" font-size="11.5" font-weight="700" fill="#374151">Column 4</text>
+    <text x="817" y="152" font-size="10.5" fill="#9ca3af">×</text>
+    <text x="660" y="176" font-size="10" fill="#9ca3af">Width: 25%  ·  Align: Center</text>
+
+    <!-- item: dynamic (wc categories) -->
+    <rect x="658" y="188" width="174" height="30" rx="7" fill="#ffffff" stroke="#e5e7eb"/>
+    <rect x="666" y="196" width="52" height="14" rx="4" fill="#ede9fe"/>
+    <text x="692" y="206" font-size="8" font-weight="700" fill="#5b21b6" text-anchor="middle">dynamic</text>
+    <text x="726" y="207" font-size="10" fill="#374151">✨ 5 product cats</text>
+
+    <!-- item: divider -->
+    <rect x="658" y="224" width="174" height="22" rx="7" fill="#ffffff" stroke="#e5e7eb"/>
+    <rect x="666" y="230" width="46" height="12" rx="4" fill="#f3f4f6"/>
+    <text x="689" y="239" font-size="8" font-weight="700" fill="#6b7280" text-anchor="middle">divider</text>
+    <line x1="732" y1="236" x2="816" y2="236" stroke="#d1d5db" stroke-dasharray="2 2"/>
+
+    <!-- item: link -->
+    <rect x="658" y="252" width="174" height="30" rx="7" fill="#ffffff" stroke="#e5e7eb"/>
+    <rect x="666" y="260" width="36" height="14" rx="4" fill="#e0e7ff"/>
+    <text x="684" y="270" font-size="8.5" font-weight="700" fill="#3730a3" text-anchor="middle">link</text>
+    <text x="710" y="271" font-size="10.5" fill="#374151">View all products →</text>
+
+    <!-- +Add item -->
+    <rect x="658" y="300" width="174" height="26" rx="6" fill="#f5f3ff" stroke="#a78bfa" stroke-dasharray="3 2"/>
+    <text x="745" y="317" font-size="10.5" font-weight="600" fill="#4f46e5" text-anchor="middle">+ Add Item</text>
+  </g>
+
+  <text x="34" y="551" font-size="12" fill="#6b7280">The column editor (Menu Builder → ⚡ Mega Menu → Edit Columns): up to 4 columns, each built from 6 content types —</text>
+  <text x="34" y="571" font-size="12" fill="#6b7280">Link, Section heading, Divider, Image, Shortcode / Widget, and auto-updating Dynamic content.</text>
+</svg>
