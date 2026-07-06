@@ -1,0 +1,48 @@
+# Giuliomax Menu Builder
+
+> Giuliomax Menu Builder is a free, open-source WordPress navigation plugin — mega menus, 50 one-click themes, a footer builder, an announcement bar with countdown, a WooCommerce cart icon, visibility rules and WCAG 2.2 AA accessibility options. Every feature is free: there is no Pro tier. This site is the official documentation.
+
+Key facts: requires WordPress 5.8+ (6.0+ recommended for Full Site Editing) and PHP 7.4+. Menus are placed with the `[menux]` shortcode, the native MenuX Gutenberg block, or by mapping classic theme locations. The plugin is distributed on WordPress.org and the source code is on GitHub (github.com/Giulio001/menux-free-version). Documentation is available in English, Italian, German, Spanish, Dutch, Portuguese (BR), Russian and French — language versions live under /it/, /de/, /es/, /nl/, /pt/, /ru/ and /fr/ with the same page names.
+
+## Getting started
+
+- [Introduction](https://giulio001.github.io/index.html): what the plugin includes and how the free model compares with typical freemium menu plugins
+- [Installation](https://giulio001.github.io/installation.html): install from WordPress.org, activate, and build your first menu
+- [Shortcode [menux]](https://giulio001.github.io/shortcode.html): place the menu anywhere with the shortcode, including per-location output
+- [Gutenberg block](https://giulio001.github.io/gutenberg.html): the native MenuX block for the block editor and Full Site Editing themes
+
+## Features
+
+- [Mega Menu](https://giulio001.github.io/mega-menu.html): full-width panels with up to 4 columns; content types are Link, Heading, Divider, Image, Shortcode and auto-updating Dynamic content; 20 industry presets
+- [Themes & categories](https://giulio001.github.io/themes.html): 50 ready-made themes in 10 style categories, applied in one click and fully customizable
+- [Logo](https://giulio001.github.io/logo.html): desktop, sticky and mobile logo slots with position, shape and size controls
+- [Announcement bar](https://giulio001.github.io/announcement.html): dismissible banner above or below the menu with an optional live countdown timer
+- [WooCommerce cart](https://giulio001.github.io/cart.html): live cart icon with item-count badge and mini-cart, powered by WooCommerce's native fragments
+- [Search](https://giulio001.github.io/search.html): a magnifying-glass icon that opens a modal searching menu items and in-page text
+- [Badges & dots](https://giulio001.github.io/badges.html): badge pills, notification dots, Font Awesome icons and CTA button styling per item
+- [Visibility rules](https://giulio001.github.io/visibility.html): show/hide items by role, login state, device, schedule, pages or UTM source — rules combine with AND logic, evaluated server-side
+- [Mobile menus](https://giulio001.github.io/mobile.html): four styles (dropdown, fullscreen, left drawer, right drawer) with hamburger, breakpoint and animation controls
+- [Layout & effects](https://giulio001.github.io/layout.html): sticky header, scroll progress bar, scroll spy, entrance and hover animations
+- [Footer Builder](https://giulio001.github.io/footer.html): standalone multi-column site footer with sections, social icons, newsletter form, legal links and 11 themes
+
+## Tools & advanced
+
+- [WP integration](https://giulio001.github.io/wp-integration.html): replace classic theme menu locations with MenuX output
+- [Import / Export](https://giulio001.github.io/import-export.html): back up or transfer the full configuration as a JSON file
+- [Accessibility](https://giulio001.github.io/accessibility.html): designed to support WCAG 2.2 AA — keyboard navigation, ARIA, focus appearance, reduced motion, touch targets
+- [Multilingual](https://giulio001.github.io/multilingual.html): per-language item labels with WPML, Polylang, TranslatePress and Multilingual Press, plus automatic RTL support
+- [FAQ](https://giulio001.github.io/faq.html): compatibility, performance, requirements and troubleshooting answers
+
+## Comparisons
+
+- [All comparisons](https://giulio001.github.io/comparisons.html): overview of how Giuliomax compares with popular menu plugins
+- [vs Max Mega Menu](https://giulio001.github.io/vs-max-mega-menu.html)
+- [vs UberMenu](https://giulio001.github.io/vs-ubermenu.html)
+- [vs WP Mega Menu](https://giulio001.github.io/vs-wp-mega-menu.html)
+- [vs QuadMenu](https://giulio001.github.io/vs-quadmenu.html)
+
+## Optional
+
+- [Plugin on WordPress.org](https://wordpress.org/plugins/giuliomax-menu-builder/): download and reviews
+- [Support forum](https://wordpress.org/support/plugin/giuliomax-menu-builder/): official free support
+- [Source code](https://github.com/Giulio001/menux-free-version): GPL repository, bug reports and pull requests welcome
