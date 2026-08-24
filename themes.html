@@ -67,6 +67,7 @@
       <a href="#browsing">Browsing themes</a>
       <a href="#categories">The 10 categories</a>
       <a href="#applying">Applying a theme</a>
+      <a href="#adaptive-sync">Adaptive Theme Sync</a>
       <a href="#customizing">Customizing after applying</a>
       <a href="#per-instance">Per-instance overrides</a>
     </div>
@@ -106,6 +107,20 @@
       <span class="callout-icon">💡</span>
       <div class="callout-body">
         <p>Applying a theme is non-destructive. It writes default values for all style properties, but any manual customizations you make afterwards are preserved and override the theme defaults.</p>
+      </div>
+    </div>
+
+    <h2 id="adaptive-sync">Adaptive Theme Sync</h2>
+    <p>Applying any of the 50 standard themes enables <strong>Adaptive Theme Sync</strong>. The desktop theme remains the source of truth while MenuX coordinates the same surface or gradient across dropdown, fullscreen, and drawer layouts and selects readable normal, hover, active, hamburger, and close-button colors.</p>
+    <ul>
+      <li>The Mobile panel shows the lowest contrast ratio across every explicit gradient stop.</li>
+      <li>If a theme color does not meet WCAG AA, MenuX automatically uses the safer black or white foreground.</li>
+      <li>Choosing a dedicated mobile preset unlinks the palettes and restores independent mobile controls.</li>
+    </ul>
+    <div class="callout note">
+      <span class="callout-icon">ℹ️</span>
+      <div class="callout-body">
+        <p><strong>Safe updates.</strong> Menus created before Adaptive Theme Sync remain unlinked after a plugin update. Their saved mobile colors are not overwritten. Sync starts only when you enable it or apply a standard theme; unlinking it does not delete the independent mobile values.</p>
       </div>
     </div>
 

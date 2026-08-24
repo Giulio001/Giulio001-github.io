@@ -1332,7 +1332,7 @@ window.MENUX_DE = {
 <h2>Installation &amp; Kompatibilität</h2>
 
 <h3>Welche WordPress-Version benötige ich?</h3>
-<p>WordPress 5.8 oder höher. Für die beste Full-Site-Editing-Erfahrung (FSE) mit dem Gutenberg-Block wird WordPress 6.0 oder höher empfohlen.</p>
+<p>WordPress 5.8 oder höher. Für die beste Full-Site-Editing-Erfahrung (FSE) mit dem Gutenberg-Block wird WordPress 6.0 oder höher empfohlen. MenuX 4.3.2 wurde bis WordPress 7.1 getestet.</p>
 
 <h3>Funktioniert es mit Page-Buildern (Elementor, Divi, Beaver Builder)?</h3>
 <p>Ja, über den <code>[menux]</code>-Shortcode. In Elementor verwende das Widget <em>Shortcode</em> und füge <code>[menux]</code> ein. In Divi verwende das <em>Code</em>-Modul. In Beaver Builder das <em>HTML</em>-Modul.</p>

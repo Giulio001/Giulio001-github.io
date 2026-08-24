@@ -68,6 +68,7 @@
       <a href="#styles">The mobile styles</a>
       <a href="#hamburger">Hamburger button</a>
       <a href="#link-colors">Mobile link colors</a>
+      <a href="#adaptive-sync">Adaptive Theme Sync</a>
       <a href="#submenu">Sub-menu behavior</a>
       <a href="#mega-mobile">Mega menus on mobile</a>
       <a href="#preview">Live phone preview</a>
@@ -136,6 +137,15 @@
       <li><strong>Active</strong> — color for the currently active item</li>
     </ul>
     <p>Leave any field empty to inherit the desktop menu colors.</p>
+
+    <h2 id="adaptive-sync">Adaptive Theme Sync</h2>
+    <p>Enable <strong>Adaptive Theme Sync</strong> in the Mobile panel to use the active standard theme as the mobile palette. MenuX carries the desktop surface or gradient into dropdown, fullscreen, and drawer panels, then checks normal, hover, and active link colors against that surface.</p>
+    <ul>
+      <li>Applying a standard theme enables sync automatically.</li>
+      <li>Applying a dedicated mobile preset disables sync and keeps its independent colors.</li>
+      <li>The WCAG status reports the lowest measured contrast; unsafe foregrounds are corrected automatically.</li>
+    </ul>
+    <div class="callout note"><span class="callout-icon">ℹ️</span><div class="callout-body"><p>Existing installations remain backward compatible: menus without a saved Adaptive setting stay unlinked after updating, and their previous mobile colors remain available.</p></div></div>
 
     <h2 id="submenu">Sub-menu behavior on mobile</h2>
     <p>When a menu item has sub-items, you can control how they expand on mobile with the <strong>accordion</strong> option:</p>

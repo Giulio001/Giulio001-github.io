@@ -55,7 +55,7 @@
 
 <p style="margin:2rem 0 2.5rem;"><img src="/assets/img/mobile-menu.svg" width="420" height="640" alt="Stili di menu mobile" style="display:block;width:100%;max-width:880px;height:auto;margin:0 auto;border:1px solid #e5e7eb;border-radius:12px;"></p>
 
-<div class="on-this-page"><strong>In questa pagina</strong><a href="#breakpoint">Impostare il breakpoint</a><a href="#styles">Gli stili mobile</a><a href="#hamburger">Pulsante hamburger</a><a href="#link-colors">Colori dei link mobile</a><a href="#submenu">Comportamento dei sottomenu</a><a href="#mega-mobile">Mega menu su mobile</a><a href="#preview">Anteprima telefono live</a></div>
+<div class="on-this-page"><strong>In questa pagina</strong><a href="#breakpoint">Impostare il breakpoint</a><a href="#styles">Gli stili mobile</a><a href="#hamburger">Pulsante hamburger</a><a href="#link-colors">Colori dei link mobile</a><a href="#adaptive-sync">Adaptive Theme Sync</a><a href="#submenu">Comportamento dei sottomenu</a><a href="#mega-mobile">Mega menu su mobile</a><a href="#preview">Anteprima telefono live</a></div>
 
 <h2 id="breakpoint">Impostare il breakpoint</h2>
 <p>Il breakpoint determina la larghezza dello schermo sotto la quale il menu desktop viene sostituito dal menu mobile. Il valore predefinito è <strong>768 px</strong>, corrispondente alla larghezza tipica dei tablet in modalità verticale.</p>
@@ -112,6 +112,15 @@
   <li><strong>Attivo</strong> — colore della voce che corrisponde alla pagina corrente.</li>
 </ul>
 <p>Se non vengono configurati colori separati, il menu mobile eredita i colori del tema attivo.</p>
+
+<h2 id="adaptive-sync">Adaptive Theme Sync</h2>
+<p>Attiva <strong>Adaptive Theme Sync</strong> nel pannello Mobile per usare il tema standard selezionato come palette mobile. MenuX applica la superficie o la sfumatura desktop ai pannelli dropdown, fullscreen e drawer, quindi verifica su quella superficie i colori dei link normale, hover e attivo.</p>
+<ul>
+  <li>Applicare un tema standard abilita automaticamente la sincronizzazione.</li>
+  <li>Applicare un preset mobile dedicato la disabilita e mantiene i suoi colori indipendenti.</li>
+  <li>Lo stato WCAG mostra il contrasto minimo misurato e corregge automaticamente i colori non sicuri.</li>
+</ul>
+<div class="callout note"><span class="callout-icon">ℹ️</span><div class="callout-body"><p>Le installazioni esistenti restano compatibili: i menu senza un'impostazione Adaptive salvata rimangono scollegati dopo l'aggiornamento e conservano i colori mobile precedenti.</p></div></div>
 
 <h2 id="submenu">Comportamento dei sottomenu su mobile</h2>
 <p>I sottomenu (dropdown) si comportano diversamente su mobile rispetto al desktop, dove si aprono al passaggio del mouse. Puoi scegliere tra due modalità:</p>

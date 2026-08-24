@@ -2,7 +2,7 @@
 
 > Giuliomax Menu Builder is a free, open-source WordPress navigation plugin — mega menus, 50 one-click themes, a footer builder, an announcement bar with countdown, a WooCommerce cart icon, visibility rules and WCAG 2.2 AA accessibility options. Every feature is free: there is no Pro tier. This site is the official documentation.
 
-Key facts: requires WordPress 5.8+ (6.0+ recommended for Full Site Editing) and PHP 7.4+. Menus are placed with the `[menux]` shortcode, the native MenuX Gutenberg block, or by mapping classic theme locations. The plugin is distributed on WordPress.org and the source code is on GitHub (github.com/Giulio001/menux-free-version). Documentation is available in English, Italian, German, Spanish, Dutch, Portuguese (BR), Russian and French — language versions live under /it/, /de/, /es/, /nl/, /pt/, /ru/ and /fr/ with the same page names.
+Key facts: current version is 4.3.2; requires WordPress 5.8+ (6.0+ recommended for Full Site Editing), is tested through WordPress 7.1, and requires PHP 7.4+. Adaptive Theme Sync coordinates standard theme surfaces and accessible colors across desktop and mobile; existing upgraded menus remain opt-in so previously saved mobile colors are preserved. Menus are placed with the `[menux]` shortcode, the native MenuX Gutenberg block, or by mapping classic theme locations. The plugin is distributed on WordPress.org and the source code is on GitHub (github.com/Giulio001/menux-free-version). Documentation is available in English, Italian, German, Spanish, Dutch, Portuguese (BR), Russian and French — language versions live under /it/, /de/, /es/, /nl/, /pt/, /ru/ and /fr/ with the same page names.
 
 ## Getting started
 

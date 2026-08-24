@@ -55,7 +55,7 @@
 
 <p style="margin:2rem 0 2.5rem;"><img src="/assets/img/themes-strip.svg" width="880" height="372" alt="Striscia di anteprime temi" style="display:block;width:100%;max-width:880px;height:auto;margin:0 auto;border:1px solid #e5e7eb;border-radius:12px;"></p>
 
-<div class="on-this-page"><strong>In questa pagina</strong><a href="#browsing">Sfogliare i temi</a><a href="#categories">Le 10 categorie</a><a href="#applying">Applicare un tema</a><a href="#customizing">Personalizzare dopo l'applicazione</a><a href="#per-instance">Override per singola istanza</a></div>
+<div class="on-this-page"><strong>In questa pagina</strong><a href="#browsing">Sfogliare i temi</a><a href="#categories">Le 10 categorie</a><a href="#applying">Applicare un tema</a><a href="#adaptive-sync">Adaptive Theme Sync</a><a href="#customizing">Personalizzare dopo l'applicazione</a><a href="#per-instance">Override per singola istanza</a></div>
 
 <h2 id="browsing">Sfogliare i temi</h2>
 <p>Tutti i temi sono accessibili dalla scheda <strong>Menu Builder → Temi</strong>. Puoi filtrare i temi per categoria usando i pulsanti in cima alla griglia, oppure scorrere l'intera libreria. Ogni tema mostra un'anteprima del menu applicato.</p>
@@ -87,6 +87,15 @@
 </ol>
 
 <div class="callout tip"><span class="callout-icon">💡</span><div class="callout-body"><p>Applicare un tema è un'operazione non distruttiva: puoi cambiare tema quante volte vuoi senza perdere le personalizzazioni avanzate che hai aggiunto manualmente nelle sezioni Colori, Tipografia e Spaziatura.</p></div></div>
+
+<h2 id="adaptive-sync">Adaptive Theme Sync</h2>
+<p>Applicando uno dei 50 temi standard si attiva <strong>Adaptive Theme Sync</strong>. Il tema desktop rimane la sorgente principale, mentre MenuX coordina la stessa superficie o sfumatura nei layout dropdown, fullscreen e drawer e sceglie colori leggibili per gli stati normale, hover e attivo, oltre che per hamburger e pulsante di chiusura.</p>
+<ul>
+  <li>Il pannello Mobile mostra il rapporto di contrasto minimo su tutti gli stop espliciti della sfumatura.</li>
+  <li>Se un colore del tema non raggiunge WCAG AA, MenuX utilizza automaticamente il colore nero o bianco più sicuro.</li>
+  <li>Selezionando un preset mobile dedicato, le palette vengono scollegate e tornano disponibili i controlli mobile indipendenti.</li>
+</ul>
+<div class="callout note"><span class="callout-icon">ℹ️</span><div class="callout-body"><p><strong>Aggiornamenti sicuri.</strong> I menu creati prima di Adaptive Theme Sync restano scollegati dopo l'aggiornamento del plugin e i colori mobile salvati non vengono sovrascritti. La sincronizzazione parte solo quando la abiliti o applichi un tema standard; disattivarla non elimina i valori mobile indipendenti.</p></div></div>
 
 <h2 id="customizing">Personalizzare dopo l'applicazione</h2>
 <p>Dopo aver applicato un tema puoi modificare qualsiasi aspetto visivo dalle sezioni di personalizzazione del pannello:</p>

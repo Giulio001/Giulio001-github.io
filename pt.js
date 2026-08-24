@@ -4,7 +4,7 @@ window.MENUX_PT = {
 "index.html": `
 <nav class="breadcrumb"><a href="index.html">Documentação</a> › Primeiros passos › Introdução</nav>
 <h1>Giuliomax Menu Builder</h1>
-<p>Bem-vindo à documentação oficial do <strong>Giuliomax Menu Builder v3.9.5</strong> — o plugin de navegação mais completo para WordPress. Com ele você cria menus responsivos, megamenus, barras de avisos, integrações com WooCommerce e muito mais, sem escrever uma linha de código.</p>
+<p>Bem-vindo à documentação oficial do <strong>Giuliomax Menu Builder v4.3.2</strong> — o plugin de navegação mais completo para WordPress. Com ele você cria menus responsivos, megamenus, barras de avisos, integrações com WooCommerce e muito mais, sem escrever uma linha de código.</p>
 
 <h2 id="o-que-e">O que é o Giuliomax Menu Builder?</h2>
 <p>O Giuliomax Menu Builder substitui o sistema de menus padrão do WordPress por uma solução moderna e altamente configurável. Você controla tudo pelo painel de administração: cores, fontes, animações, regras de visibilidade e comportamento responsivo.</p>
@@ -21,7 +21,8 @@ window.MENUX_PT = {
 
 <h2 id="requisitos">Requisitos</h2>
 <ul>
-  <li>WordPress 6.0 ou superior</li>
+  <li>WordPress 5.8 ou superior</li>
+  <li>Compatível e testado até o WordPress 7.1</li>
   <li>PHP 7.4 ou superior</li>
   <li>WooCommerce 6.0+ (opcional, apenas para o carrinho)</li>
 </ul>
@@ -812,7 +813,7 @@ window.MENUX_PT = {
 
 <details>
 <summary><strong>Qual versão do WordPress é necessária?</strong></summary>
-<p>O Giuliomax Menu Builder requer WordPress 6.0 ou superior e PHP 7.4 ou superior. Recomendamos sempre usar a versão estável mais recente do WordPress.</p>
+<p>O Giuliomax Menu Builder requer WordPress 5.8 ou superior e PHP 7.4 ou superior. O MenuX 4.3.2 foi testado até o WordPress 7.1; recomendamos sempre usar a versão estável mais recente.</p>
 </details>
 
 <h2 id="problemas-de-instalacao">Problemas de instalação</h2>

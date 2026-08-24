@@ -22,6 +22,7 @@ window.MENUX_IT = {
   <thead><tr><th>Funzionalità</th><th>Dettagli</th></tr></thead>
   <tbody>
     <tr><td>50 temi</td><td>10 categorie di stile, applicabili con un clic</td></tr>
+    <tr><td>Adaptive Theme Sync</td><td>Coordina automaticamente superfici e colori accessibili tra desktop, tablet e mobile</td></tr>
     <tr><td>Mega menu</td><td>Fino a 4 colonne, con link, intestazioni, immagini e shortcode</td></tr>
     <tr><td>Footer Builder</td><td>Footer multi-colonna con sezioni, barra inferiore e temi dedicati</td></tr>
     <tr><td>Barra annunci</td><td>Banner promozionale con timer countdown integrato</td></tr>
@@ -46,7 +47,8 @@ window.MENUX_IT = {
 
 <h2 id="requirements">Requisiti</h2>
 <ul>
-  <li>WordPress 6.0 o versione successiva</li>
+  <li>WordPress 5.8 o versione successiva</li>
+  <li>Compatibile e testato fino a WordPress 7.1</li>
   <li>PHP 7.4 o versione successiva</li>
   <li>Qualsiasi tema WordPress (classico o basato su blocchi)</li>
   <li>WooCommerce (opzionale — necessario solo per la funzione carrello)</li>
@@ -235,7 +237,7 @@ window.MENUX_IT = {
 
 <p style="margin:2rem 0 2.5rem;"><img src="assets/img/themes-strip.svg" alt="Striscia di anteprime temi" style="display:block;width:100%;max-width:880px;height:auto;margin:0 auto;border:1px solid #e5e7eb;border-radius:12px;"></p>
 
-<div class="on-this-page"><strong>In questa pagina</strong><a href="#browsing">Sfogliare i temi</a><a href="#categories">Le 10 categorie</a><a href="#applying">Applicare un tema</a><a href="#customizing">Personalizzare dopo l'applicazione</a><a href="#per-instance">Override per singola istanza</a></div>
+<div class="on-this-page"><strong>In questa pagina</strong><a href="#browsing">Sfogliare i temi</a><a href="#categories">Le 10 categorie</a><a href="#applying">Applicare un tema</a><a href="#adaptive-sync">Adaptive Theme Sync</a><a href="#customizing">Personalizzare dopo l'applicazione</a><a href="#per-instance">Override per singola istanza</a></div>
 
 <h2 id="browsing">Sfogliare i temi</h2>
 <p>Tutti i temi sono accessibili dalla scheda <strong>Menu Builder → Temi</strong>. Puoi filtrare i temi per categoria usando i pulsanti in cima alla griglia, oppure scorrere l'intera libreria. Ogni tema mostra un'anteprima del menu applicato.</p>
@@ -267,6 +269,15 @@ window.MENUX_IT = {
 </ol>
 
 <div class="callout tip"><span class="callout-icon">💡</span><div class="callout-body"><p>Applicare un tema è un'operazione non distruttiva: puoi cambiare tema quante volte vuoi senza perdere le personalizzazioni avanzate che hai aggiunto manualmente nelle sezioni Colori, Tipografia e Spaziatura.</p></div></div>
+
+<h2 id="adaptive-sync">Adaptive Theme Sync</h2>
+<p>Applicando uno dei 50 temi standard si attiva <strong>Adaptive Theme Sync</strong>. Il tema desktop rimane la sorgente principale, mentre MenuX coordina la stessa superficie o sfumatura nei layout dropdown, fullscreen e drawer e sceglie colori leggibili per gli stati normale, hover e attivo, oltre che per hamburger e pulsante di chiusura.</p>
+<ul>
+  <li>Il pannello Mobile mostra il rapporto di contrasto minimo su tutti gli stop espliciti della sfumatura.</li>
+  <li>Se un colore del tema non raggiunge WCAG AA, MenuX utilizza automaticamente il colore nero o bianco più sicuro.</li>
+  <li>Selezionando un preset mobile dedicato, le palette vengono scollegate e tornano disponibili i controlli mobile indipendenti.</li>
+</ul>
+<div class="callout note"><span class="callout-icon">ℹ️</span><div class="callout-body"><p><strong>Aggiornamenti sicuri.</strong> I menu creati prima di Adaptive Theme Sync restano scollegati dopo l'aggiornamento del plugin e i colori mobile salvati non vengono sovrascritti. La sincronizzazione parte solo quando la abiliti o applichi un tema standard; disattivarla non elimina i valori mobile indipendenti.</p></div></div>
 
 <h2 id="customizing">Personalizzare dopo l'applicazione</h2>
 <p>Dopo aver applicato un tema puoi modificare qualsiasi aspetto visivo dalle sezioni di personalizzazione del pannello:</p>
@@ -707,7 +718,7 @@ window.MENUX_IT = {
 
 <p style="margin:2rem 0 2.5rem;"><img src="assets/img/mobile-menu.svg" alt="Stili di menu mobile" style="display:block;width:100%;max-width:880px;height:auto;margin:0 auto;border:1px solid #e5e7eb;border-radius:12px;"></p>
 
-<div class="on-this-page"><strong>In questa pagina</strong><a href="#breakpoint">Impostare il breakpoint</a><a href="#styles">Gli stili mobile</a><a href="#hamburger">Pulsante hamburger</a><a href="#link-colors">Colori dei link mobile</a><a href="#submenu">Comportamento dei sottomenu</a><a href="#mega-mobile">Mega menu su mobile</a><a href="#preview">Anteprima telefono live</a></div>
+<div class="on-this-page"><strong>In questa pagina</strong><a href="#breakpoint">Impostare il breakpoint</a><a href="#styles">Gli stili mobile</a><a href="#hamburger">Pulsante hamburger</a><a href="#link-colors">Colori dei link mobile</a><a href="#adaptive-sync">Adaptive Theme Sync</a><a href="#submenu">Comportamento dei sottomenu</a><a href="#mega-mobile">Mega menu su mobile</a><a href="#preview">Anteprima telefono live</a></div>
 
 <h2 id="breakpoint">Impostare il breakpoint</h2>
 <p>Il breakpoint determina la larghezza dello schermo sotto la quale il menu desktop viene sostituito dal menu mobile. Il valore predefinito è <strong>768 px</strong>, corrispondente alla larghezza tipica dei tablet in modalità verticale.</p>
@@ -764,6 +775,15 @@ window.MENUX_IT = {
   <li><strong>Attivo</strong> — colore della voce che corrisponde alla pagina corrente.</li>
 </ul>
 <p>Se non vengono configurati colori separati, il menu mobile eredita i colori del tema attivo.</p>
+
+<h2 id="adaptive-sync">Adaptive Theme Sync</h2>
+<p>Attiva <strong>Adaptive Theme Sync</strong> nel pannello Mobile per usare il tema standard selezionato come palette mobile. MenuX applica la superficie o la sfumatura desktop ai pannelli dropdown, fullscreen e drawer, quindi verifica su quella superficie i colori dei link normale, hover e attivo.</p>
+<ul>
+  <li>Applicare un tema standard abilita automaticamente la sincronizzazione.</li>
+  <li>Applicare un preset mobile dedicato la disabilita e mantiene i suoi colori indipendenti.</li>
+  <li>Lo stato WCAG mostra il contrasto minimo misurato e corregge automaticamente i colori non sicuri.</li>
+</ul>
+<div class="callout note"><span class="callout-icon">ℹ️</span><div class="callout-body"><p>Le installazioni esistenti restano compatibili: i menu senza un'impostazione Adaptive salvata rimangono scollegati dopo l'aggiornamento e conservano i colori mobile precedenti.</p></div></div>
 
 <h2 id="submenu">Comportamento dei sottomenu su mobile</h2>
 <p>I sottomenu (dropdown) si comportano diversamente su mobile rispetto al desktop, dove si aprono al passaggio del mouse. Puoi scegliere tra due modalità:</p>
@@ -1176,7 +1196,7 @@ window.MENUX_IT = {
 <h2>Installazione &amp; Compatibilità</h2>
 
 <h3>Quale versione di WordPress è richiesta?</h3>
-<p>Menu Builder richiede WordPress 6.0 o versione successiva e PHP 7.4 o versione successiva. Si consiglia di usare sempre la versione più recente di WordPress per motivi di sicurezza e compatibilità.</p>
+<p>Menu Builder richiede WordPress 5.8 o versione successiva e PHP 7.4 o versione successiva. MenuX 4.3.2 è testato fino a WordPress 7.1; si consiglia comunque di usare sempre la versione stabile più recente.</p>
 
 <h3>È compatibile con i page builder (Elementor, Divi, Beaver Builder)?</h3>
 <p>Sì. Puoi inserire il menu tramite shortcode <code>[menux]</code> in qualsiasi widget di testo o shortcode supportato dai principali page builder. Per Elementor, esiste anche un widget dedicato. Per Divi e Beaver Builder, usa il modulo/widget shortcode nativo del page builder.</p>

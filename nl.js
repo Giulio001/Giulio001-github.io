@@ -1084,7 +1084,7 @@ window.MENUX_NL = {
 
 <details>
 <summary><strong>Welke WordPress-versie is vereist?</strong></summary>
-<p>Giuliomax Menu Builder vereist WordPress 6.0 of hoger en PHP 7.4 of hoger. We raden aan altijd de nieuwste stabiele versie van WordPress te gebruiken.</p>
+<p>Giuliomax Menu Builder vereist WordPress 5.8 of hoger en PHP 7.4 of hoger. MenuX 4.3.2 is getest tot en met WordPress 7.1; we raden aan altijd de nieuwste stabiele versie te gebruiken.</p>
 </details>
 
 <h2 id="installatie-problemen">Installatieproblemen</h2>
